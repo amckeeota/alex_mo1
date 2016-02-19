@@ -108,6 +108,44 @@
 <wire x1="2.1" y1="-3.85" x2="3.5" y2="-3.85" width="0" layer="51"/>
 <wire x1="3.5" y1="-3.85" x2="3.5" y2="3.85" width="0" layer="51"/>
 </package>
+<package name="QFN-32">
+<wire x1="0" y1="0" x2="5" y2="0" width="0.127" layer="51"/>
+<wire x1="5" y1="0" x2="5" y2="5" width="0.127" layer="51"/>
+<wire x1="5" y1="5" x2="0" y2="5" width="0.127" layer="51"/>
+<wire x1="0" y1="5" x2="0" y2="0" width="0.127" layer="51"/>
+<smd name="VDD" x="0.75" y="0" dx="0.25" dy="0.8" layer="1"/>
+<smd name="P1.7" x="1.25" y="0" dx="0.25" dy="0.8" layer="1"/>
+<smd name="P1.3" x="1.75" y="0" dx="0.25" dy="0.8" layer="1"/>
+<smd name="P1.2" x="2.25" y="0" dx="0.25" dy="0.8" layer="1"/>
+<smd name="P1.1" x="2.75" y="0" dx="0.25" dy="0.8" layer="1"/>
+<smd name="P1.0" x="3.25" y="0" dx="0.25" dy="0.8" layer="1"/>
+<smd name="P2.7" x="3.75" y="0" dx="0.25" dy="0.8" layer="1"/>
+<smd name="P2.6" x="4.25" y="0" dx="0.25" dy="0.8" layer="1"/>
+<smd name="VSS" x="0" y="0.75" dx="0.25" dy="0.8" layer="1" rot="R90"/>
+<smd name="P0.0" x="0" y="1.25" dx="0.25" dy="0.8" layer="1" rot="R90"/>
+<smd name="P0.3" x="0" y="1.75" dx="0.25" dy="0.8" layer="1" rot="R90"/>
+<smd name="XTAL1_32K" x="0" y="2.25" dx="0.25" dy="0.8" layer="1" rot="R90"/>
+<smd name="XTAL2_32" x="0" y="2.75" dx="0.25" dy="0.8" layer="1" rot="R90"/>
+<smd name="P0.6" x="0" y="3.25" dx="0.25" dy="0.8" layer="1" rot="R90"/>
+<smd name="P0.7" x="0" y="3.75" dx="0.25" dy="0.8" layer="1" rot="R90"/>
+<smd name="VCC" x="0" y="4.25" dx="0.25" dy="0.8" layer="1" rot="R90"/>
+<smd name="P2.4" x="5" y="0.75" dx="0.25" dy="0.8" layer="1" rot="R90"/>
+<smd name="P2.3" x="5" y="1.25" dx="0.25" dy="0.8" layer="1" rot="R90"/>
+<smd name="!RST" x="5" y="1.75" dx="0.25" dy="0.8" layer="1" rot="R90"/>
+<smd name="RVDD" x="5" y="2.25" dx="0.25" dy="0.8" layer="1" rot="R90"/>
+<smd name="RF-" x="5" y="2.75" dx="0.25" dy="0.8" layer="1" rot="R90"/>
+<smd name="RF+" x="5" y="3.25" dx="0.25" dy="0.8" layer="1" rot="R90"/>
+<smd name="AVSS" x="5" y="3.75" dx="0.25" dy="0.8" layer="1" rot="R90"/>
+<smd name="AVDD" x="5" y="4.25" dx="0.25" dy="0.8" layer="1" rot="R90"/>
+<smd name="IDC" x="0.75" y="5" dx="0.25" dy="0.8" layer="1"/>
+<smd name="AVSS2" x="1.25" y="5" dx="0.25" dy="0.8" layer="1"/>
+<smd name="P3.0" x="1.75" y="5" dx="0.25" dy="0.8" layer="1"/>
+<smd name="P3.1" x="2.25" y="5" dx="0.25" dy="0.8" layer="1"/>
+<smd name="XTAL1" x="2.75" y="5" dx="0.25" dy="0.8" layer="1"/>
+<smd name="XTAL2" x="3.25" y="5" dx="0.25" dy="0.8" layer="1"/>
+<smd name="AVDD2" x="3.75" y="5" dx="0.25" dy="0.8" layer="1"/>
+<smd name="REXT" x="4.25" y="5" dx="0.25" dy="0.8" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FT230X">
@@ -146,6 +184,44 @@
 <pin name="GND" x="-7.62" y="-5.08" length="middle"/>
 <text x="-2.54" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-2.54" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="QN9021">
+<wire x1="-22.86" y1="22.86" x2="-22.86" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="-25.4" x2="20.32" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-25.4" x2="20.32" y2="22.86" width="0.254" layer="94"/>
+<wire x1="20.32" y1="22.86" x2="-22.86" y2="22.86" width="0.254" layer="94"/>
+<pin name="VCC" x="-5.08" y="27.94" length="middle" rot="R270"/>
+<pin name="P0.7" x="-27.94" y="5.08" length="middle"/>
+<pin name="P0.6" x="-27.94" y="7.62" length="middle"/>
+<pin name="XTAL2_32K" x="25.4" y="-12.7" length="middle" rot="R180"/>
+<pin name="XTAL1_32K" x="25.4" y="-10.16" length="middle" rot="R180"/>
+<pin name="P0.3" x="-27.94" y="10.16" length="middle"/>
+<pin name="P0.0/TXD0" x="-27.94" y="15.24" length="middle"/>
+<pin name="VSS" x="-2.54" y="-30.48" length="middle" rot="R90"/>
+<pin name="VDD" x="-2.54" y="27.94" length="middle" rot="R270"/>
+<pin name="P1.7/RXD0" x="-27.94" y="12.7" length="middle"/>
+<pin name="P1.3" x="-27.94" y="-5.08" length="middle"/>
+<pin name="P1.2" x="-27.94" y="-2.54" length="middle"/>
+<pin name="P1.1" x="-27.94" y="0" length="middle"/>
+<pin name="P1.0" x="-27.94" y="2.54" length="middle"/>
+<pin name="P2.7" x="-27.94" y="-15.24" length="middle"/>
+<pin name="P2.6" x="-27.94" y="-12.7" length="middle"/>
+<pin name="AVDD" x="2.54" y="27.94" length="middle" rot="R270"/>
+<pin name="AVSS" x="2.54" y="-30.48" length="middle" rot="R90"/>
+<pin name="RF-" x="25.4" y="12.7" length="middle" rot="R180"/>
+<pin name="RF+" x="25.4" y="15.24" length="middle" rot="R180"/>
+<pin name="RVDD" x="0" y="27.94" length="middle" rot="R270"/>
+<pin name="!RST" x="25.4" y="2.54" length="middle" rot="R180"/>
+<pin name="P2.4" x="-27.94" y="-10.16" length="middle"/>
+<pin name="P2.3" x="-27.94" y="-7.62" length="middle"/>
+<pin name="IDC" x="25.4" y="-17.78" length="middle" rot="R180"/>
+<pin name="VSS2" x="0" y="-30.48" length="middle" rot="R90"/>
+<pin name="P3.0" x="-27.94" y="-17.78" length="middle"/>
+<pin name="P3.1" x="-27.94" y="-20.32" length="middle"/>
+<pin name="XTAL1" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="AVDD2" x="5.08" y="27.94" length="middle" rot="R270"/>
+<pin name="XTAL2" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<pin name="REXT" x="25.4" y="7.62" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -191,6 +267,52 @@
 <connect gate="G$1" pin="GND" pad="5 A B"/>
 <connect gate="G$1" pin="ID" pad="4"/>
 <connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="QN9021">
+<gates>
+<gate name="G$1" symbol="QN9021" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN-32">
+<connects>
+<connect gate="G$1" pin="!RST" pad="!RST"/>
+<connect gate="G$1" pin="AVDD" pad="AVDD"/>
+<connect gate="G$1" pin="AVDD2" pad="AVDD2"/>
+<connect gate="G$1" pin="AVSS" pad="AVSS"/>
+<connect gate="G$1" pin="IDC" pad="IDC"/>
+<connect gate="G$1" pin="P0.0/TXD0" pad="P0.0"/>
+<connect gate="G$1" pin="P0.3" pad="P0.3"/>
+<connect gate="G$1" pin="P0.6" pad="P0.6"/>
+<connect gate="G$1" pin="P0.7" pad="P0.7"/>
+<connect gate="G$1" pin="P1.0" pad="P1.0"/>
+<connect gate="G$1" pin="P1.1" pad="P1.1"/>
+<connect gate="G$1" pin="P1.2" pad="P1.2"/>
+<connect gate="G$1" pin="P1.3" pad="P1.3"/>
+<connect gate="G$1" pin="P1.7/RXD0" pad="P1.7"/>
+<connect gate="G$1" pin="P2.3" pad="P2.3"/>
+<connect gate="G$1" pin="P2.4" pad="P2.4"/>
+<connect gate="G$1" pin="P2.6" pad="P2.6"/>
+<connect gate="G$1" pin="P2.7" pad="P2.7"/>
+<connect gate="G$1" pin="P3.0" pad="P3.0"/>
+<connect gate="G$1" pin="P3.1" pad="P3.1"/>
+<connect gate="G$1" pin="REXT" pad="REXT"/>
+<connect gate="G$1" pin="RF+" pad="RF+"/>
+<connect gate="G$1" pin="RF-" pad="RF-"/>
+<connect gate="G$1" pin="RVDD" pad="RVDD"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
+<connect gate="G$1" pin="VSS" pad="VSS"/>
+<connect gate="G$1" pin="VSS2" pad="AVSS2"/>
+<connect gate="G$1" pin="XTAL1" pad="XTAL1"/>
+<connect gate="G$1" pin="XTAL1_32K" pad="XTAL1_32K"/>
+<connect gate="G$1" pin="XTAL2" pad="XTAL2"/>
+<connect gate="G$1" pin="XTAL2_32K" pad="XTAL2_32"/>
 </connects>
 <technologies>
 <technology name=""/>
